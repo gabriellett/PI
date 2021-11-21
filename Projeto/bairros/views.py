@@ -8,4 +8,6 @@ def index(request):
 	return HttpResponse(template.render(context,request))
 
 def sobre_nos(request):
-	return HttpResponse()
+	template=loader.get_template('bairros/sobre_nos.html')
+	context={}
+	return HttpResponse(template.render(context,request))
