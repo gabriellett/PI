@@ -4,8 +4,11 @@ from django.urls import path
 
 urlpatterns = [
 	# /bairros/
-    url('^$', views.index, name='index'),
+	url('^$', views.index, name='index'),
 
-    # /sobre_nos/
-    url('sobre_nos', views.sobre_nos, name='sobre_nos')
-]
+	# /sobre_nos/
+	url('sobre_nos', views.sobre_nos, name='sobre_nos'),
+
+	# /bairro/
+	url('bairro', views.bairro, name='bairro')
+	]

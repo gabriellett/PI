@@ -1,0 +1,11 @@
+{% extends "bairros/base.html" %}
+
+{% block content %}
+<form action="/bairros/bairro" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Buscar">
+</form>
+
+{{ dados }}
+{% endblock %}
